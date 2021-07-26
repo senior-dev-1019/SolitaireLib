@@ -1,0 +1,28 @@
+{
+  "name": "pyramid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html -d bin-dev",
+    "build": "parcel build index.html --public-url \"./\" -d bin --no-source-maps --experimental-scope-hoisting",
+    "tswatch": "tsc --watch --noEmit --project tsconfig.json",
+    "tslint": "tslint --project .",
+    "tslintfix": "tslint --project . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pure-rand": "^2.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-appcache": "^0.1.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.8",
+    "tslint": "^6.1.2",
+    "tslint-consistent-codestyle": "^1.16.0",
+    "typescript": "^3.9.5"
+  }
+}
